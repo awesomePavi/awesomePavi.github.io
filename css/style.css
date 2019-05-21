@@ -1,0 +1,18 @@
+.header {
+    background-image: url('../assets/HeaderWall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.header .headline {
+    background-color: #4965b2;
+    background-image: linear-gradient(to bottom right, #4965b2 0%, #314478 100%);
+}
+
+.header .headline h2 {
+    margin-bottom: 0;
+}
+.header .headline h5 {
+    margin-top: 0;
+}
