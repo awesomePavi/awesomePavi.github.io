@@ -17,6 +17,62 @@
     margin-top: 0;
 }
 
+div .email {
+    display: inline-block;
+    border-radius: .25rem;
+    background: white;
+    color: #4965b2;
+    border: 1px solid #4965b2;
+    padding-right: .75rem;
+}
+
+div .email p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+div .email a {
+    display: inline-block;
+    margin: 0 !important;
+    border-color: white !important;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+div .email a:hover{
+    background: #ff2323;
+    border-color: #ff2323;
+}
+
+.header .hotlinks a{
+    margin: 0.2rem;
+    background: white;
+    color: #4965b2;
+    border-color: #4965b2;
+    cursor: pointer;
+}
+
+.header .hotlinks a:hover{
+    color: #fff;
+}
+
+.hotlinks .linkedin:hover{
+    background: #3f8aff;
+    border-color: #3f8aff;
+}
+
+.hotlinks .git:hover{
+    background: #000000;
+    border-color: #000000;
+}
+
+.hotlinks .resume:hover{
+    background: #22bf2a;
+    border-color: #22bf2a;
+}
+
+
 /* Bootstrap Media Query Ranges*/
 
 /* Until */
