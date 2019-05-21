@@ -4,12 +4,10 @@
     background-repeat: no-repeat;
     color: white;
 }
-
 .header .headline {
     background-color: #4965b2;
     background-image: linear-gradient(to bottom right, #4965b2 0%, #314478 100%);
 }
-
 .header .headline h2 {
     margin-bottom: 0;
 }
@@ -17,7 +15,8 @@
     margin-top: 0;
 }
 
-div .email {
+/* Makes the small email icon open the default mail app while allowing user to highlight email for copy pasting */
+.header div .email {
     display: inline-block;
     border-radius: .25rem;
     background: white;
@@ -25,26 +24,25 @@ div .email {
     border: 1px solid #4965b2;
     padding-right: .75rem;
 }
-
-div .email p{
+.header div .email p{
     display: inline-block;
     vertical-align: middle;
     margin: 0;
     padding: 0;
 }
-div .email a {
+.header div .email a {
     display: inline-block;
     margin: 0 !important;
     border-color: white !important;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-
-div .email a:hover{
+.header div .email a:hover{
     background: #ff2323;
     border-color: #ff2323;
 }
 
+/* Provides links colour scheme*/
 .header .hotlinks a{
     margin: 0.2rem;
     background: white;
@@ -52,22 +50,18 @@ div .email a:hover{
     border-color: #4965b2;
     cursor: pointer;
 }
-
 .header .hotlinks a:hover{
     color: #fff;
 }
-
-.hotlinks .linkedin:hover{
+.header .hotlinks .linkedin:hover{
     background: #3f8aff;
     border-color: #3f8aff;
 }
-
-.hotlinks .git:hover{
+.header .hotlinks .git:hover{
     background: #000000;
     border-color: #000000;
 }
-
-.hotlinks .resume:hover{
+.header .hotlinks .resume:hover{
     background: #22bf2a;
     border-color: #22bf2a;
 }
