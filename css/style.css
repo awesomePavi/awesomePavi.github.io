@@ -68,7 +68,9 @@
 
 .btn-primary {
     background-color: #4965b2;
-    border-color: #4965b2;
+    border-width: 2px;
+    border-color: #253c99;
+    cursor: pointer !important;
 }
 
 .split {
@@ -78,7 +80,22 @@
 .card {
     /*min-width: 18rem;*/
     max-width: 20rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #747474;
 }
+
+.card-body {
+    border-top: 1px solid #747474;
+}
+
+.card-title {
+    /*background-color: #9fcdff;*/
+    border-bottom: 0.1rem solid #97c3f2;
+    border-radius: 2px;
+    width: fit-content;
+}
+
 /* Current Projects Section*/
 
 .current {
