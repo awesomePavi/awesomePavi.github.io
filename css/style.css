@@ -91,9 +91,22 @@
 
 .card-title {
     /*background-color: #9fcdff;*/
-    border-bottom: 0.1rem solid #97c3f2;
     border-radius: 2px;
     width: fit-content;
+}
+
+.card-title a {
+    border-bottom: 0.1rem solid #000000;
+}
+
+.card-title a:link, .card-title a:visited {
+    border-bottom: 0.1rem solid #97c3f2;
+    color: inherit;
+}
+
+a:link:hover {
+    background-color: #97c3f2;
+    text-decoration: none;
 }
 
 /* Current Projects Section*/
