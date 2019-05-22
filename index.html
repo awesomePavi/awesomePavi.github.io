@@ -15,7 +15,7 @@
     <title>Pavi Path</title>
 </head>
 <body>
-    <div class="container header pb-1">
+    <div class="container header pb-0">
         <div class="jumbotron" style="background: none">
             <div class="row align-items-center">
                 <div class="col-md-3 text-center">
@@ -50,27 +50,33 @@
         </div>
     </div>
     <div class="container current pt-4 pb-4">
-        <div class="row">
-            <div class="col-lg-12 card-deck align-items-center justify-content-center">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6 d-flex justify-content-center">
                 <div class="card">
                     <img class="card-img-top" src="assets/current/photoframe.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Remote Photo Frame</h5>
                         <p class="card-text">A <b>Raspberry-PI</b> powered digital photo-frame for my grandparents. To allow the grandchildren from around the world keep them updated through photos.</p>
-                        <btn class="btn btn-primary" target="remotePhotoFrame" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="mobileHide btn btn-primary" target="remotePhotoFrame" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
                 <div class="card">
                     <img class="card-img-top" src="assets/current/sync.png" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Contacts Synchronizer</h5>
                         <p class="card-text">A simple <b>Android Application</b> to periodically synchronize contacts with their online identities, updating photos, address, and tracking social media accounts. </p>
-                        <btn class="btn btn-primary" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="mobileHide btn btn-primary" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
             </div>
+            <!--<div class="col-lg-12 card-deck align-items-center justify-content-center">-->
+
+                <!---->
+            <!--</div>-->
         </div>
-        <div id="remotePhotoFrame" class="row collapse mt-2 pt-2 pb-2">
+        <div id="remotePhotoFrame" class="mobileHide row collapse mt-2 pt-2 pb-2">
             <div class="col-lg-12">
                 <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
             </div>
@@ -143,7 +149,7 @@
                 </p>
             </div>
         </div>
-        <div id="contactSync" class="row collapse mt-2 pt-2 pb-2">
+        <div id="contactSync" class="mobileHide row collapse mt-2 pt-2 pb-2">
             <div class="col-lg-12">
                 <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
             </div>
@@ -180,6 +186,20 @@
     </div>
     <div class="container-fluid current">
         <div class="row">
+            <!--Website 2k19-->
+            <!--Capstone-->
+            <!--Web Server Networks Course-->
+            <!--ABS communicatore MEC 2018-->
+            <!--Chat room-->
+            <!--Parking Lot Application-->
+            <!--Apple spotify Converters-->
+            <!--JS Tanks-->
+            <!--Weather Station-->
+            <!--Website 2k17-->
+            <!--St Pattys App-->
+            <!--Website OG-->
+            <!--About Canada-->
+            <!--Snake Game-->
         </div>
     </div>
 
