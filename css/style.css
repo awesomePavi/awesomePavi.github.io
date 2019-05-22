@@ -66,6 +66,41 @@
     border-color: #22bf2a;
 }
 
+.btn-primary {
+    background-color: #4965b2;
+    border-color: #4965b2;
+}
+
+.split {
+    background: #4965b2;
+}
+
+.card {
+    min-width: 18rem;
+    max-width: 20rem;
+}
+/* Current Projects Section*/
+
+.current {
+    background: #e6e6e6;
+}
+
+.collapse {
+    background: #b4b4b4;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.collapse .close {
+    border-radius: 50%;
+    padding: .25rem;
+    color: #000000;
+    border: 1px solid #000000;
+    margin: .1rem;
+    cursor: pointer;
+}
 
 /* Bootstrap Media Query Ranges*/
 
