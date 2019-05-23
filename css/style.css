@@ -88,6 +88,12 @@
       color: white !important;
 }
 
+.split.main {
+    background: #c13d40 !important;
+    text-align: center;
+    color: white !important;
+}
+
 .card {
     /*min-width: 18rem;*/
     max-width: 20rem;
@@ -126,7 +132,7 @@
     color: inherit;
 }
 
-a:link:hover {
+.card a:link:hover {
     background-color: #97c3f2;
     text-decoration: none;
 }
