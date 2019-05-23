@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blinkingCursor.css">
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -294,7 +295,7 @@
                         <p class="card-text">Website rebuild for 2017 with a more streamlined lower contrast aesthetic design, built on <b>HTML5, JS and CSS</b> to showcase my resume and projects.</p>
                     </div>
                     <div class="mobileHide card-footer text-center p-2">
-                        <btn class="btn btn-primary w-100" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="btn btn-primary w-100" target="website2k17" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
             </div>
@@ -306,7 +307,7 @@
                         <p class="card-text">My first <b>Web Sockets</b> based application built on <b>Node.js & Socket.io</b> as the backend with a simple <b>HTML, JS, CSS</b> frontend; making a barebones single room chat room.</p>
                     </div>
                     <div class="mobileHide card-footer text-center p-2">
-                        <btn class="btn btn-primary w-100" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="btn btn-primary w-100" target="chatRoom" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
             </div>
@@ -367,6 +368,112 @@
             <div class="col-lg-6">
                 <img class="img-fluid" src="assets/past/mec2018/impl.png"></img>
             </div>
+            <div class="col-lg-12">
+              <h2 class="split tech">The Tech stack<span class="blinking-cursor">|</span></h2>
+              <p>
+                Client:
+                <br>
+                - Electon Wrapper
+                <br>
+                - HTML5
+                <br>
+                - Javascript
+                <br>
+                - Hammer.js (Swapped for custom library, since gestures did not work on Surface Tablet)
+                <hr>
+                Server-Side: (Text->Speech)
+                <br>
+                - python3
+                <br>
+                - IBM-Watson (Text->Speech)
+                <hr>
+                Ran Locally
+              </p>
+            </div>
+        </div>
+        <div id="website2k17" class="mobileHide row collapse mt-2 pt-2 pb-2">
+          <div class="col-lg-12">
+              <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Why Rebuild it?</h2>
+            <p>
+              My personal website is intended to showcase my projects and skills that I have developed over the years. I have a goal of annually updating the website for this vary reason, in 2016 I made my first personal website and it follows the tacky scheme that you would see in thea early days of websites. A lot was going on and the contrast and colours made for a bright website. On-top of this people would have to navigate to my projects and resume the parts that truly showcase my skills.
+              Which is what lead to this redesign.
+              <br>
+              <br>
+              This new website has a core focus on my resume with 3 navigation options, to guide focus to what I want people and potential employers to see:
+              <br>
+              &nbsp;&nbsp;- Projects page, where all my projects can be found
+              <br>
+              &nbsp;&nbsp;- Resume page, where an updated copy of my resume is available for download and vieing on the website
+              <br>
+              &nbsp;&nbsp;- A quick link to my Github, to see what I am up to.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split tech">The Tech stack<span class="blinking-cursor">|</span></h2>
+            <p>
+              WebPage:
+              <br>
+              - HTML
+              <br>
+              - Javascript
+              <br>
+              - CSS3
+              <hr>
+              Hosted on Github
+            </p>
+          </div>
+        </div>
+        <div id="chatRoom" class="mobileHide row collapse mt-2 pt-2 pb-2">
+          <div class="col-lg-12">
+              <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">My First Web Sockets Project</h2>
+            <p>
+              The purpose of this website was to use real-time web and harness web-sockets in a project which, can reflect a product in the real world.
+              <br>
+              <br>
+              The site prompts for a username to be entered upon loading. The server then sends back any chat logs so the new user can view the history of the chat. Each user is given a unique colour in the chat window. The chat currently only supports text-based chat, but on mobile you are able to include emoticons. The message field is located at the top of the page, to deal with issues with software keyboards on mobile
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Possible Improvments</h2>
+            <p>
+              Allowing for Private Messaging as well as expanding to multiple chat rooms, not just one generic one.
+              <hr>
+              Ensuring Usernames are uniqie, as it is right now with the barebones development, each computer has a unique ID, but usernames can overlap. Checking usernames and forcing users to have unique usernmaes would be benefical to reduce confusion.
+              <hr>
+              The disconnect system that is currentely implemented uses the sockets onDisconnect call which is called at the end of a `keep-alive` cycle. This means a user appears logged in for a few minutes after the log out. Something attached to the window on close command in Javascript that can send a message to the server would be more effective.
+              <hr>
+              Move the message input field to the bottom of the page like traditional messaging applications. The front-end of this application was assembeled very quikly with usability in mind, the message input field was placed at the top so mobile phones and tables would not have the on-screen keyboard cover the input field. This can be resolved on the front-end side.
+            </p>
+          </div>
+          <div class="col-lg-12">
+            <h2 class="split tech">The Tech stack<span class="blinking-cursor">|</span></h2>
+            <p>
+              Client:
+              <br>
+              - HTML
+              <br>
+              - Javascript
+              <br>
+              - Socket.io
+              <hr>
+              Server-Side:
+              <br>
+              - Node.js
+              <br>
+              - Express
+              <br>
+              - Socket.io
+              <hr>
+              Hosted on Microsoft Azure
+
+            </p>
+          </div>
         </div>
 
         <!--Apple spotify Converters-->
@@ -529,6 +636,8 @@
             }
             if (!!currentButton) {
                 currentButton.innerText = "Read More";
+                var card = currentButton.parentElement.parentElement;
+                card.classList.remove('active');
             }
             currentActive = false;
             currentButton = false;
@@ -540,7 +649,13 @@
               return;
             }
             handleClickClose();
+
+            // Show element is selected
             element.innerText = "Close";
+            var card = element.parentElement.parentElement;
+            card.classList.add('active');
+
+
             var target = element.getAttribute("target");
             console.log(target)
             var showEle = document.getElementById(target);

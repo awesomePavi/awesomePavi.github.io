@@ -5,8 +5,8 @@
     color: white;
 }
 .header .headline {
-    background-color: #4965b2;
-    background-image: linear-gradient(to bottom right, #4965b2 0%, #314478 100%);
+    background-color: #264baf;
+    background-image: linear-gradient(to bottom right, #264baf 0%, #314478 100%);
 }
 .header .headline h2 {
     margin-bottom: 0;
@@ -20,8 +20,8 @@
     display: inline-block;
     border-radius: .25rem;
     background: white;
-    color: #4965b2;
-    border: 1px solid #4965b2;
+    color: #264baf;
+    border: 1px solid #264baf;
     padding-right: .75rem;
 }
 .header div .email p{
@@ -46,8 +46,8 @@
 .header .hotlinks a{
     margin: 0.2rem;
     background: white;
-    color: #4965b2;
-    border-color: #4965b2;
+    color: #264baf;
+    border-color: #264baf;
     cursor: pointer;
 }
 .header .hotlinks a:hover{
@@ -67,14 +67,24 @@
 }
 
 .btn-primary {
-    background-color: #4965b2;
+    background-color: #264baf;
     border-width: 2px;
     border-color: #253c99;
     cursor: pointer !important;
 }
 
 .split {
-    background: #4965b2;
+    background: #264baf;
+    color: white;
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+.split.tech {
+      background: #09c15f !important;
+      font-family: monospace;
+      text-align: center;
+      color: white !important;
 }
 
 .card {
@@ -83,6 +93,17 @@
     padding: 0;
     margin: 0;
     border: 1px solid #747474;
+}
+
+.card.active {
+  background: #b4b4b4;
+  border: 1px solid #9b9b9b;
+  border-radius: 5px;
+}
+
+.card.active .btn-primary {
+  background: #d10e0e;
+  border-color: #99253e;
 }
 
 .card-body {
