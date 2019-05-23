@@ -210,7 +210,7 @@
                         <p class="card-text">Project focused website rebuild for 2019 built on <b>Bootstrap 4, HTML, JS and CSS</b>, previous versions were resume focused and projects second.</p>
                     </div>
                     <div class="mobileHide card-footer text-center p-2">
-                        <btn class="btn btn-primary w-100" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="btn btn-primary w-100" target="website2k19" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
             </div>
@@ -226,6 +226,38 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="website2k19" class="mobileHide row collapse mt-2 pt-2 pb-2">
+          <div class="col-lg-12">
+              <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Why Project Oriented</h2>
+            <p>
+              Having not updated my websit since 2017, it looked good but I found that it was quite a hassel to keep 3 resumes up to date, that being my linkeding profile, actual resume and website. Something else I began to realize is that when friends and other developers go to my website it's to see my projects, and potential employers will supplment my resume with my website so their is no real reason to have two copies of my resume both physical and online.
+              <br>
+              <br>
+              Thus this time I focused on a complete projct based approach, as the total number of projects I work on go up it becomes harder to show it all in detail on one page, so I shifted to using small cards that expand to reveal details.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split tech">The Tech stack<span class="blinking-cursor">|</span></h2>
+            <p>
+              WebPage:
+              <br>
+              - HTML
+              <br>
+              - bootstrap
+              <br>
+              - Javascript
+              - JQuery
+              <br>
+              - CSS3
+              - FontAwesome
+              <hr>
+              Hosted on Github
+            </p>
+          </div>
         </div>
 
         <!--SES Website-->
@@ -488,7 +520,7 @@
                         <p class="card-text">Created when I transitioned from Spotify to Apple Music than back to Spotify shortly after. Built purely using <b>HTML, JS, CSS</b> to avoid having to manually remake palmists. Using Spotifys API's and web scraping Apple Musics website.</p>
                     </div>
                     <div class="mobileHide card-footer text-center p-2">
-                        <btn class="btn btn-primary w-100" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                        <btn class="btn btn-primary w-100" target="atos" onclick="handleClickShow(this)">Read More</btn>
                     </div>
                 </div>
             </div>
@@ -516,6 +548,62 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="atos" class="mobileHide row collapse mt-2 pt-2 pb-2">
+          <div class="col-lg-12">
+              <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Market Gap</h2>
+            <p>
+              The purpose of this website is simple to aid in the conversion of AppleMusic and Spotify playlists across platforms.The reason for the development of this website occurred in two steps. First I was a long time Spotify user who switched to apple music, so I made a system to convert Spotify Playlists to Apple Music, a little while later I switched back to Spotify and then needed to convert an Apple Music Playlist to a Spotify Playlist. I was unable to find any free service which did not require an IOS device or were free (which did not use security vulnerabilities which were patched as of iTunes version 12.5.4). to this end, I decided it would be in my best interest to create my own system to do this.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Apple Music To Spotify</h2>
+              <p>
+                The system required a public share link for an iTunes playlist to be provided. Using the apple music toolbox the playlist can be converted to a nice widget. From this point the system converted the playlist in 5 steps:
+                <ul>
+                  <li>Use the Spotify API to gain access to Create and Search API</li>
+                  <li>Parse the Apple Music Widget, to get Song Titles and Artists</li>
+                  <li>Check if a Spotify playlist has the same name if so prompt the user</li>
+                  <li>Use the Spotify search API to find the songs then add them to the created palylist</li>
+                  <li>Display the new playlist as a widget and let the user know what songs could not be added automatically</li>
+                </ul>
+                The biggest issue that I am currently having with this implementation is the search accuracy, for a portion of the songs, are being picked up as an Acapella cover, or another variant of the original song.
+              </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Spotify To Apple Music</h2>
+              <p>
+                The idea I had was simple, to re-create the iTunes playlist structure I did this by making a simple apple music playlist and exporting it from iTunes. I reverse engineered the playlist style and discovered what information I would need to successfully mimic a playlist. I went about building this playlist builder in 4 steps:
+                <ul>
+                  <li>Use the Spotify API to gain access to Spotify playlist and track info</li>
+                  <li>Build a user interface to select a playlist to convert</li>
+                  <li>Create a downloadable text file to import into iTunes, through HTML and JavaScript</li>
+                  <li>Use the iTunes search API, and search songs with the track name and artist provided by Spotify. Assuming the first result returned was correct</li>
+                </ul>
+                The biggest issue I ran into occurred at the 4th step, for Apple Music requires composer information in the playlist file in-order to successfully include the track. This is a piece of Data that I was unable to get from the iTunes API. I then explored different options trying to play with AppleScripts and Apple Music API to make a desktop based system but the API for Apple Music in its current capacity is for IOS.
+              </p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="split">Status</h2>
+            <p>
+              Due to these setbacks the website currently creates Spotify widgets with its Apple Music counterpart, allowing users to find their tracks in Apple Music but until further notice, the automated transfer of a playlist is unlikely to occur.
+            </p>
+            <h2 class="split tech">The Tech stack<span class="blinking-cursor">|</span></h2>
+            <p>
+              WebPage:
+              <ul>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li>Spotify API</li>
+                <li>iTunes API and the Apple Music Toolbox</li>
+              </ul>
+              <hr>
+              Hosted on Github
+            </p>
+          </div>
         </div>
 
         <!--JS Tanks-->
@@ -559,6 +647,7 @@
                 </div>
             </div>
         </div>
+
 
         <!--Website OG-->
         <!--About Canada-->
