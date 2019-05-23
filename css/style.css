@@ -76,8 +76,9 @@
 .split {
     background: #264baf;
     color: white;
-    padding: 0.1rem;
-    margin: 0.1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
 }
 
 .split.tech {
@@ -137,18 +138,19 @@ a:link:hover {
 }
 
 .collapse {
-    background: #b4b4b4;
+    background: #f9f9f9;
     border: 1px solid #9b9b9b;
     border-radius: 5px;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .collapse .close {
     border-radius: 50%;
     padding: .25rem;
-    color: #000000;
-    border: 1px solid #000000;
+    color: #f00;
+    border: 1px solid #f00;
     margin: .1rem;
     cursor: pointer;
 }
