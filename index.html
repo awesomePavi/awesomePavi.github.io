@@ -42,6 +42,107 @@
     </div>
 </div>
 
+<!-- Competitions -->
+<div class="container split">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <h1> Competitions </h1>
+        </div>
+    </div>
+</div>
+<div class="container current pt-4 pb-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-4 p-1 d-flex justify-content-center">
+            <div class="card">
+                <img class="card-img-top" src="assets/comp/hcd.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a>McMaster Human Centered Design</a></h5>
+                    <h3 class=""><a>Overall Winner - 2018</a></h3>
+                    <p class="card-text">
+                        Participated in a McMaster Engineering hosted Human Centered Design workshop, to gain more knowledge and experience in the design philosophy. Little did I know that this workshop was actually a competition based learning activity, and we had to work with real clients to solve a real problem. We worked with McMaster Accessibility center with an aim to make the campus better navigatable for people in general, with our team also focusing on partial and complete blindness.
+                    </p>
+                </div>
+                <div class="mobileHide card-footer text-center p-2">
+                    <btn class="btn btn-primary w-100" target="hcd" onclick="handleClickShow(this)">Read More</btn>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 p-1 d-flex justify-content-center">
+            <div class="card">
+                <img class="card-img-top" src="assets/comp/icpc.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="http://icpc.foundation/" target="_blank">ACM - ICPC&nbsp;<i class="fas fa-link"></i></a></h5>
+                    <h3 class=""><a>Regionals - 2016</a></h3>
+                    <p class="card-text">
+                        The International Collegiate Programming Competition  (ICPC) is a global competition that focuses on algorithmic-based problem-solving. I found myself entering this competition one day after seeing a poster for a McMaster coding competition. I had gone for fun and was hastily put into a team of 3 people, where we competed against 6 other teams got <b>3rd place</b>, and we made it to the regional level competition and were going head to head with the best Software and Computer Science School in Southern Ontario.  </p>
+                </div>
+                <div class="mobileHide card-footer text-center p-2">
+                    <a class="btn btn-primary w-100" href="download/ICPC/ICPC_CERTIF.pdf" target="_blank">Certificate</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 p-1 d-flex justify-content-center">
+            <div class="card">
+                <img class="card-img-top" src="assets/comp/codeToWin.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="https://www.communitech.ca/how-we-help/talent/code-to-win/" target="_blank">Communitech Code To Win&nbsp;<i class="fas fa-link"></i></a></h5>
+                    <h3 class=""><a>Finalist - 2015</a></h3>
+                    <p class="card-text">
+                        Communitech Code to Win is an algorithmic based coding competition where contestants from across Canada solve 5 programming problems with the language of their choice and then a select handful of people are selected to come to the Tannery in Waterloo where the finals are held for a cash prize. I entered this competition in my first year of university and went to the final round, where I was up against masters of Computer Science students, sadly I did not win but I learned that you don't always need to reinvent the wheel, since if I used existing algorithms I could have completed more questions sooner and had a better chance of winning.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hcd" class="mobileHide row collapse mt-2 pt-2 pb-2">
+    <div class="col-lg-12">
+        <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
+    </div>
+
+    <div class="col-lg-6">
+        <h2 class="split tech">Overall Winners</h2>
+        <img class="card-img-top" src="assets/comp/hcd_overall.jpg"  alt="Overall winners of competition image">
+     </div>
+
+    <div class="col-lg-6">
+        <h2 class="split">What is Human Centered Design</h2>
+        <p>
+            A framework for problem-solving and design management that works to develop solutions by involving the human perspective in all steps of the process. Going back and forth with the client during the requirements gathering and refinement stages. Working with the client before, after and even during the brainstorming sessions. Creating prototypes and going working with the client to make a product that will be adopted and used by the target market.
+        </p>
+    </div>
+    <div class="col-lg-6">
+        <h2 class="split">The Problem</h2>
+        <p>
+            Presented with a challenge from the McMaster Accessibility Services, we were given a thorough run through of the problems of that those with accessibility face; with an increasing number of students and proportionally those with accessibility needs increase with ideals shifting toward pushing people to pursue post-secondary education.
+            <br>
+            <br>
+            The main problem that we were faced with solving was that with Parking and Navigation and specifically the lack of it. With recent pushes on the campus, we have boards posted with a map of canvas but these do not provide much assistance to those with accessibility needs. As well as the lack of parking available as there is a finite amount of parking on the campus itself with satellite parking spots which people can access with a shuttle bus but the shuttle is not equipped for those with accessibility needs such as wheelchairs.
+            <br>
+            <br>
+            From the provided background our team extracted a secondary challenge as well where people with accessibility needs are not acknowledged in the sense that students don't really know that they are there and when they do see them or realize someone has accessibility needs they do not know how to interact since they weren't aware and are genuinely startled. This was not a requirement of the challenge but after going back and forth with the client we felt a need to add this into our solution somehow.
+        </p>
+    </div>
+    <div class="col-lg-6">
+        <h2 class="split">Our Proposal</h2>
+        <p>
+            Our proposed solution consisted of two specific parts one for parking and those with physical disabilities and another for pure navigation.
+            <br>
+            <br>
+            To handle the parking and navigation for those with physical disabilities we proposed making the campus a Pilot project and working with an organization such as UBer or Lyft. Where we could Jointly fund vehicles for those with physical accessibility and use a cal to order, style transport system where students on the campus with identified needs could be shuttled from location to location. This would open up parking in the satellite parking and provide some relief for those with physical accessibility needs where navigation from location to location physically in itself is an issue.
+            <br>
+            <br>
+            The second portion of the solution was to create a navigation system that can be used by everyone consisting of colours symbols and urban braille. This system would be scalable and would raise awareness that people with accessibility do exist on campus since students would see it when they go from place to place. The system in simple terms consisted on a fixed set of main pathways leading to existing map boards on campus, then from these boards students/visitors can follow subpaths identified on theses map board and described via audio queues to find the building they are looking for.
+        </p>
+    </div>
+
+    <div class="col-lg-6">
+        <h2 class="split">Final Thoughts</h2>
+        This was a brief summary of our challenge and the proposed solution that we came up with during the short workshop. We were able to take home the title of "overall winner" as we went back and forth with our client to bring in the relevant human-perspective to draw out a unified solution to our given problem.
+    </div>
+
+</div>
+
 <!-- Current Projects-->
 <div class="container split">
     <div class="row">
