@@ -52,7 +52,7 @@
 </div>
 <div class="container current pt-4 pb-4">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="hcd" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/comp/hcd.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -63,7 +63,7 @@
                     </p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="hcd" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="hcdButton" class="btn btn-primary w-100" target="hcdShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
@@ -95,7 +95,7 @@
         </div>
     </div>
 </div>
-<div id="hcd" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="hcdShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -153,7 +153,7 @@
 </div>
 <div class="container current pt-4 pb-4">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-6 p-1 d-flex justify-content-center">
+        <div id="remotePhotoFrame" class="col-md-6 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/current/photoframe.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -161,11 +161,11 @@
                     <p class="card-text">A <b>Raspberry-PI</b> powered digital photo-frame for my grandparents. To allow the grandchildren from around the world keep them updated through photos.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="remotePhotoFrame" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="remotePhotoFrameButton" class="btn btn-primary w-100" target="remotePhotoFrameShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 p-1 d-flex justify-content-center">
+        <div id="contactSync" class="col-md-6 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/current/sync.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -173,13 +173,13 @@
                     <p class="card-text">A simple <b>Android Application</b> to periodically synchronize contacts with their online identities, updating photos, address, and tracking social media accounts. </p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="contactSync" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="contactSyncButton" class="btn btn-primary w-100" target="contactSyncShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="remotePhotoFrame" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="remotePhotoFrameShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
         <div class="col-lg-12">
             <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
         </div>
@@ -252,7 +252,7 @@
             </p>
         </div>
     </div>
-<div id="contactSync" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="contactSyncShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
         <div class="col-lg-12">
             <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
         </div>
@@ -292,7 +292,7 @@
     <!--Website 2K19-->
     <!--Web Server Networks Course-->
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="agriboost" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/agriboost.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -300,23 +300,23 @@
                     <p class="card-text"><b>Server Lead</b> for a data-centered project to monitor variables that affect a plants growth, providing farmers with notifications on what to do to optimize the crop yield. </p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="agriboost" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="agriboostButton" class="btn btn-primary w-100" target="agriboostShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
         <div class="col-md-4 p-1 d-flex justify-content-center">
-            <div class="card">
+            <div id="website2k19" class="card">
                 <img class="card-img-top" src="assets/past/website2k19.jpg" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title"><a>Website 2019</a></h5>
                     <p class="card-text">Project focused website rebuild for 2019 built on <b>Bootstrap 4, HTML, JS and CSS</b>, previous versions were resume focused and projects second.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="website2k19" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="website2k19Button" class="btn btn-primary w-100" target="website2k19Show" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="p2p" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/p2p.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -324,13 +324,13 @@
                     <p class="card-text">Using <b>python3 server and sockets</b> created tracker and peer script, to operate as a peer-2-peer network for file synchronization. Developed as part of a computer networking course.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="p2p" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="p2pButton" class="btn btn-primary w-100" target="p2pShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="agriboost" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="agriboostShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -519,7 +519,7 @@
         </p>
     </div>
 </div>
-<div id="website2k19" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="website2k19Show" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -572,7 +572,7 @@
         </p>
     </div>
 </div>
-<div id="p2p" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="p2pShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -619,7 +619,7 @@
 <!--Parking Lot Application-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="devShare" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/devShare.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -627,11 +627,11 @@
                     <p class="card-text">An initiative to help fill the knowledge gap amongst the developers at McMaster University to make a more inclusive and knowledgeable student development base.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="devShare" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="devShareButton" class="btn btn-primary w-100" target="devShareShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="ses" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/ses.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -639,11 +639,11 @@
                     <p class="card-text">As <b>VP Development</b> for McMaster University Software Engineering Society, I brought the website into 2019 with a fresh bootstrap redesign, as well as played key roles in new initiatives for McMasters development community.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="ses" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="sesButton" class="btn btn-primary w-100" target="sesShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="parking" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/parking.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -651,13 +651,13 @@
                     <p class="card-text">Using <b>PHP, SQL, HTML5, JS and CSS on an AWS Server</b> created a classifieds style website, where people can sell and request parking spots. With individual user tracking and proximity search</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="parking" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="parkingButton" class="btn btn-primary w-100" target="parkingShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="devShare" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="devShareShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -688,7 +688,7 @@
         </p>
     </div>
 </div>
-<div id="ses" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="sesShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -748,7 +748,7 @@
         </p>
     </div>
 </div>
-<div id="parking" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="parkingShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -825,7 +825,7 @@
 <!--Chat room-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="mec2018" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/mec2k18.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -833,11 +833,11 @@
                     <p class="card-text">Using <b>python3, HTML5, JS, and CSS</b> prototyped a new swipe based input system modeled after the T-9 input system of mobile phones from the early 2000's to allow people with limited motor skills and speech impairment to interact with those around them.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="mec2018" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="mec2018Button" class="btn btn-primary w-100" target="mec2018Show" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="website2k17" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/website2k17.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -845,11 +845,11 @@
                     <p class="card-text">Website rebuild for 2017 with a more streamlined lower contrast aesthetic design, built on <b>HTML5, JS and CSS</b> to showcase my resume and projects.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="website2k17" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="website2k17Button" class="btn btn-primary w-100" target="website2k17Show" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="chatRoom" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/chatroom.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -857,13 +857,13 @@
                     <p class="card-text">My first <b>Web Sockets</b> based application built on <b>Node.js & Socket.io</b> as the backend with a simple <b>HTML, JS, CSS</b> frontend; making a barebones single room chat room.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="chatRoom" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="chatRoomButton" class="btn btn-primary w-100" target="chatRoomShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="mec2018" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="mec2018Show" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -960,7 +960,7 @@
         </p>
     </div>
 </div>
-<div id="website2k17" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="website2k17Show" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1015,7 +1015,7 @@
         </p>
     </div>
 </div>
-<div id="chatRoom" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="chatRoomShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1088,7 +1088,7 @@
 <!--MEC 2016-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="atos" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/appleSpotify.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1096,11 +1096,11 @@
                     <p class="card-text">Created when I transitioned from Spotify to Apple Music than back to Spotify shortly after. Built purely using <b>HTML, JS, CSS</b> to avoid having to manually remake palmists. Using Spotifys API's and web scraping Apple Musics website.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="atos" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="atosButton" class="btn btn-primary w-100" target="atosShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="distributedComputing" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/distributedComputing.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1108,11 +1108,11 @@
                     <p class="card-text">Created a system to distribute computational load to multiple computers, built on <b>PHP, HTML, JS & CSS</b> the goal was to allow the average person to go to a website and contribute to scientific computing; to lower computer costs and hopefully speed up computations for scientists.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="distributedComputing" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="distributedComputingButton" class="btn btn-primary w-100" target="distributedComputingShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="mec2k16" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/mec2k16.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1120,13 +1120,13 @@
                     <p class="card-text">In a group attempted to create a <b>Real-Time C++</b> system to run on an ocean Buoy to help refugees navigate the open oceans safely, while avoiding drifting out to sea. </p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="mec2k16" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="mec2k16Button" class="btn btn-primary w-100" target="mec2k16Show" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="atos" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="atosShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1204,7 +1204,7 @@
         </p>
     </div>
 </div>
-<div id="distributedComputing" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="distributedComputingShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1257,7 +1257,7 @@
         </p>
     </div>
 </div>
-<div id="mec2k16" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="mec2k16Show" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1335,7 +1335,7 @@
 <!--Weather Station-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="stPats" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/stPats.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1343,11 +1343,11 @@
                     <p class="card-text">Created a fun little web app to allow friends to track how much each other has had to drink, built on <b>HTML, JS & CSS</b> with a <b>Firebase</b> data store. We were able to have a little competition to see who celebrated the most.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="stPats" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="stPatsButton" class="btn btn-primary w-100" target="stPatsShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="jsTanks" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/jsTanks.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1355,11 +1355,11 @@
                     <p class="card-text">Term long project for an object oriented course, built using <b>HTML5, JS & CSS</b> with focus on using <b>JS Object Constructs</b>, made an 8-bit style game where you must destory the enemies base with basic random based AI and difficulty levels.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="jsTanks" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="jsTanksButton" class="btn btn-primary w-100" target="jsTanksShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="weaterStnAnlyzr" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/weaterStnAnlyzr.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1367,13 +1367,13 @@
                     <p class="card-text">Term long big data project with a <b>Ruby</b> backend and an Electron app <b>HTML, JS & CSS</b> frontend, using tolerances and graphing algorithms, was able to determine what weather stations were redundant and could be removed to reduce costs.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="weaterStnAnlyzr" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="weaterStnAnlyzrButton" class="btn btn-primary w-100" target="weaterStnAnlyzrShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="stPats" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="stPatsShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i>&nbsp;</span>
     </div>
@@ -1433,7 +1433,7 @@
         </p>
     </div>
 </div>
-<div id="jsTanks" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="jsTanksShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1497,7 +1497,7 @@
         </p>
     </div>
 </div>
-<div id="weaterStnAnlyzr" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="weaterStnAnlyzrShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1598,7 +1598,7 @@
 <!--Tetraverse-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="website2k16" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/website2k16.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1606,11 +1606,11 @@
                     <p class="card-text">My first website, made using <b>HTML & CSS</b> to showcase who I am, my resume and projects with a very high contrast colour scheme which I believed to look good at the time.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="website2k16" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="website2k16Button" class="btn btn-primary w-100" target="website2k16Show" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="welcomeToCanada" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/welcomeToCanada.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1618,11 +1618,11 @@
                     <p class="card-text">A simple fragment based <b>Android Application</b> to help ease the transition for foreigners weather they are vacationers or immigrants get accustomed to life in Canada.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="welcomeToCanada" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="welcomeToCanadaButton" class="btn btn-primary w-100" target="welcomeToCanadaShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="tetraverse" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/tetraverse.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1630,13 +1630,13 @@
                     <p class="card-text">Our term long final project for Grade-12 programming. Using <b>Java & Java-FX</b> we developed tetris with new pieces added in and blocks (ex. a bomb block). As well as implemented 3D-Rendering with adjustable depth, and game board rotation.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="tetraverse" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="tetraverseButton" class="btn btn-primary w-100" target="tetraverseShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="website2k16" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="website2k16Show" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1687,7 +1687,7 @@
         </p>
     </div>
 </div>
-<div id="welcomeToCanada" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="welcomeToCanadaShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1746,7 +1746,7 @@
         </p>
     </div>
 </div>
-<div id="tetraverse" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="tetraverseShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1810,7 +1810,7 @@
 <!--Snake Game-->
 <div class="container current pb-2">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-4 p-1 d-flex justify-content-center">
+        <div id="snake" class="col-md-4 p-1 d-flex justify-content-center">
             <div class="card">
                 <img class="card-img-top" src="assets/past/snake.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -1818,13 +1818,13 @@
                     <p class="card-text">Created out of boredom during my Grade 9 programming class, this snake game made in <b>Turing</b> was the first application I made and began my endeavors into the programming world, and now the software engineering world.</p>
                 </div>
                 <div class="mobileHide card-footer text-center p-2">
-                    <btn class="btn btn-primary w-100" target="snake" onclick="handleClickShow(this)">Read More</btn>
+                    <btn id="snakeButton" class="btn btn-primary w-100" target="snakeShow" onclick="handleClickShow(this)">Read More</btn>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div id="snake" class="mobileHide row collapse mt-2 pt-2 pb-2">
+<div id="snakeShow" class="mobileHide row collapse mt-2 pt-2 pb-2">
     <div class="col-lg-12">
         <span class="close float-right" onclick="handleClickClose()"><i class="fas fa-times-circle"></i></span>
     </div>
@@ -1872,7 +1872,7 @@
     var currentActive = false;
     var currentButton = false;
 
-    function handleClickClose() {
+    function handleClickClose(keepHash) {
         if (!!currentActive) {
             var hideEle = document.getElementById(currentActive);
             hideEle.classList.remove('show');
@@ -1884,6 +1884,12 @@
         }
         currentActive = false;
         currentButton = false;
+
+        if (!!!keepHash) {
+            const url = new URL(window.location);
+            url.hash = '';
+            history.replaceState(null, document.title, url);
+        }
     }
 
     function handleClickShow(element) {
@@ -1891,7 +1897,7 @@
             handleClickClose();
             return;
         }
-        handleClickClose();
+        handleClickClose(true);
 
         // Show element is selected
         element.innerText = "Close";
@@ -1901,14 +1907,27 @@
 
         var target = element.getAttribute("target");
         console.log(target)
+        window.location.hash = target.substring(0, target.length-4);
+
         var showEle = document.getElementById(target);
         showEle.classList.add('show');
 
-        currentActive = target
+        currentActive = target;
         currentButton = element;
-
-
     }
+
+    function onLoad() {
+        console.log("Dom Loaded")
+        var open = window.location.hash.substr(1);
+        if (!open) {
+            return;
+        }
+        var el = document.getElementById(open + "Button");
+        handleClickShow(el);
+        setTimeout(function(){ document.getElementById(open).scrollIntoView(); }, 100);
+    }
+
+    window.addEventListener('DOMContentLoaded', onLoad);
 </script>
 </body>
 </html>
