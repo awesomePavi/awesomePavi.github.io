@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.header {
+    background-image: url('../assets/HeaderWall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.header .headline {
+    background-color: #264baf;
+    background-image: linear-gradient(to bottom right, #264baf 0%, #314478 100%);
+}
+.header .headline h2 {
+    margin-bottom: 0;
+}
+.header .headline h5 {
+    margin-top: 0;
+}
+
+/* Makes the small email icon open the default mail app while allowing user to highlight email for copy pasting */
+.header div .email {
+    display: inline-block;
+    border-radius: .25rem;
+    background: white;
+    color: #264baf;
+    border: 1px solid #264baf;
+    padding-right: .75rem;
+}
+.header div .email p{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.header div .email a {
+    display: inline-block;
+    margin: 0 !important;
+    border-color: white !important;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.header div .email a:hover{
+    background: #ff2323;
+    border-color: #ff2323;
+}
+
+/* Provides links colour scheme*/
+.header .hotlinks a{
+    margin: 0.2rem;
+    background: white;
+    color: #264baf;
+    border-color: #264baf;
+    cursor: pointer;
+}
+.header .hotlinks a:hover{
+    color: #fff;
+}
+.header .hotlinks .linkedin:hover{
+    background: #3f8aff;
+    border-color: #3f8aff;
+}
+.header .hotlinks .git:hover{
+    background: #000000;
+    border-color: #000000;
+}
+.header .hotlinks .resume:hover{
+    background: #22bf2a;
+    border-color: #22bf2a;
+}
+
+.btn-primary {
+    background-color: #264baf;
+    border-width: 2px;
+    border-color: #253c99;
+    cursor: pointer !important;
+}
+
+.split {
+    background: #264baf;
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.split.tech {
+      background: #09c15f !important;
+      font-family: monospace;
+      text-align: center;
+      color: white !important;
+}
+
+.split.main {
+    background: #c13d40 !important;
+    text-align: center;
+    color: white !important;
+}
+
+.card {
+    /*min-width: 18rem;*/
+    max-width: 25rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #747474;
+}
+
+.card.active {
+  background: #b4b4b4;
+  border: 1px solid #9b9b9b;
+  border-radius: 5px;
+}
+
+.card.active .btn-primary {
+  background: #d10e0e;
+  border-color: #99253e;
+}
+
+.card-body {
+    border-top: 1px solid #747474;
+}
+
+.card-title {
+    /*background-color: #9fcdff;*/
+    border-radius: 2px;
+    width: fit-content;
+}
+
+.card-title a {
+    border-bottom: 0.1rem solid #000000;
+}
+
+.card-title a:link, .card-title a:visited {
+    border-bottom: 0.1rem solid #97c3f2;
+    color: inherit;
+}
+
+.card a:link:hover {
+    background-color: #97c3f2;
+    text-decoration: none;
+}
+
+/* Current Projects Section*/
+
+.current {
+    background: #e6e6e6;
+}
+
+.collapse {
+    background: #f9f9f9;
+    border: 1px solid #9b9b9b;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.collapse .close {
+    border-radius: 50%;
+    padding: .25rem;
+    color: #f00;
+    border: 1px solid #f00;
+    margin: .1rem;
+    cursor: pointer;
+}
+
+/* Bootstrap Media Query Ranges*/
+
+/* Until */
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {  }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
+
+/* UP TO*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+    /*Make header text use whole width and not overflow*/
+    .header {
+        align-items: center;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header .headline {
+        padding: 0;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .mobileHide {
+        display: none;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {  }
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {  }
+
+/*In Range*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { }
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { }
